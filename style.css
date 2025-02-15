@@ -1,0 +1,417 @@
+:root{
+    --gray :  rgb(58, 57, 57);
+    --yellow : rgb(243, 149, 8);
+    --shadow : 0 0 2px rgb(5, 5, 5);
+    --font : "Quicksand", serif;
+    --roboto : "Roboto", serif;
+    }
+
+body,h1,h2,p{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar Section */
+.navbar{
+    display: flex;
+    gap: 0;
+    width: 100%;
+    color: var(--gray);
+    font-weight: bold;
+    text-shadow: 0 0 2px rgb(185, 185, 185);
+    background-color: whitesmoke;
+    justify-content: center;
+    position: fixed;
+}
+
+.name{
+    padding: 1rem;
+    margin: 0 15rem 0 -4rem;
+}
+
+.logo{
+    font-size: 1.3rem;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+.items{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    font-size: 1.3rem;
+} 
+
+.name,.items{
+    cursor: pointer;
+}
+
+.home{
+    color: var(--yellow);
+}
+
+.name:hover,.item:hover{
+    color: var(--yellow);
+}
+
+/* Hero Section */
+
+.container1{
+    background: linear-gradient(150deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url('./images/herosection.jpg') no-repeat center/cover;  
+    height: 60vw;
+    margin: 0;
+}
+
+.herosection{
+    display: grid;
+    gap: 1rem;
+    padding: 18rem 8.5rem;
+    color: rgba(245, 245, 245, 0.952);
+}
+
+.title{
+    font-size: 2rem;
+    padding: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: var(--roboto);
+    font-weight: 300;
+}
+
+.subtitle{
+    line-height: 1.5;
+    font-size: 3.8rem;
+    margin: 1.2rem 0;
+    font-family: var(--font);
+}
+
+button{
+    background-color: var(--yellow);
+    text-shadow: var(--shadow);
+    font-size: 1.5rem;
+    color: whitesmoke;
+    border-radius: 0.5rem;
+    padding: 1rem 0.3rem;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.get{
+    max-width: 10rem;
+    margin-top: 3rem;
+}
+
+/* Section 1 */
+
+.section1{
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: 6rem 8.5rem;
+    /* border: 1px solid red; */
+    padding: 0;
+    font-family: var(--roboto);
+   
+}
+
+.left{
+    line-height: 1.4;
+    width: 84%;
+}
+
+.right{
+    align-self: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+.deal{
+    padding: 0.5rem 1rem;
+}
+
+.head{
+    color: var(--yellow);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.subhead {
+    font-family: var(--roboto);
+    font-size: 2.8rem;
+    font-weight: 300 ;
+    letter-spacing: 2px;
+    color: var(--gray);
+    text-shadow: var(--shadow);
+}
+
+
+/* Section 2 */
+
+.section2{
+    display: flex;
+    gap: 2rem;
+    margin: auto auto;
+    max-width: 95%;
+    align-items: center;
+
+}
+
+.one,.two,.three{
+    max-width: 35%;
+}
+
+.sec2{
+    box-shadow: 0px 0px 5px rgb(17, 17, 17);
+}
+
+.boxhead{
+    font-size: 1.5rem;
+    padding: 1rem 0  0.8rem 0;
+}
+
+.para{
+    max-width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.one img,.two img, .three img{
+    width: 100%;
+    height :300px;
+}
+
+.more{
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1rem 0 1rem 0;
+    justify-content: right;
+    margin-left: 65%;
+}
+
+/* section 4 like section 1 */
+
+.contents{
+    font-size: 1.22rem;
+    color: var(--gray)
+}
+
+/* Section 5 start here */
+
+.section5{
+    display: flex;
+    margin: auto auto;
+}
+
+.section5container{
+    padding: 4rem;
+    height: auto;
+    background: linear-gradient(150deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),url('./images/carpenter-talking-mobile-phone.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.rightbox{
+    margin: 0;
+    cursor: pointer;
+}
+
+.righttitle{
+    padding: 2rem;
+    padding-bottom : 0;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: black;
+    font-weight: 400;
+}
+
+.detail{
+    font-size: 1rem;
+    color: var(--gray);
+    line-height: 1.5;
+    padding: 0.8rem 2rem 1.5rem 2rem;
+}
+
+.line1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(245, 245, 245, 0.747);
+    margin: 2rem 1rem 3rem 1rem;
+    text-align: center;
+}
+
+.leftpara{
+    border: 0.5px solid rgb(215, 226, 215);
+    box-shadow: 0px 0px 8px rgba(216, 206, 206, 0.856);
+    margin: 1.5rem auto;
+    height: 60%;
+    width: 80%;
+}
+
+
+.leftdetail{
+    font-size: 1.2rem;
+    max-width: 85%;
+    padding: 0;
+    margin: auto auto;
+    line-height: 1.5;
+    color: whitesmoke;
+}
+
+.lefthead{
+    padding-top: 2rem;
+    padding-bottom: 0;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0rem 2rem 1rem 2.5rem;
+}
+
+.topbox{
+    background-color: rgba(240, 248, 255, 0.945);
+    margin: 1.5rem 0;
+    
+}
+
+.topbox:hover{
+    background: linear-gradient(150deg, rgba(0, 0, 0, 0.1), rgba(228, 218, 218, 0.7), rgba(255, 254, 254, 0.8)),url('./images/close-up-photo-cutting-wood-with-fretsaw.jpg');
+    background-size: cover;
+}
+
+/* Section6 */
+
+.section6{
+    display: grid;
+    width: 80%;
+    height: auto;
+    margin: 5rem auto;
+}
+
+.services{
+    margin-bottom: 1rem;
+    padding-left: 0.2rem;
+}
+
+.s6content{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 0.1fr repeat(3, 1fr) ;
+    gap: 10px;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+.img{
+    /* background-size: cover; */
+    background-position: center;
+    height: 200px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.imgone{
+    grid-row: 1 / span 2;
+    height: auto;
+    width: 15rem;
+    background-image: url(./images/image2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.first{
+   margin-left: 1.5rem;
+}
+
+.imgtwo, .imgthree, .imgfour, .imgfive{
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 5px rgb(17, 17, 17);
+}
+
+.imgtwo{
+    grid-column: 2 / span 2;
+    height: auto;
+    background-image: url(./images/image3.jpg); 
+}
+
+.imgthree{
+    background-image: url(./images/excavator-action.jpg);
+}
+
+.imgfour{
+    background-image: url(./images/image1.jpg);
+}
+
+.imgfive{
+    grid-column: 3 / span 2;
+    background-image: url(./images/close-up-photo-cutting-wood-with-fretsaw.jpg);
+}
+
+/* section 7 */
+.sec7{
+    display: flex;
+    align-items: center;
+    background-color: rgb(252, 153, 61);
+    padding: 5rem 0 5rem 10rem;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.section7{
+    width: 120px;
+    height: 100px;
+    box-shadow: 0px 0px 5px rgb(17, 17, 17);
+} 
+.head7{
+    color: rgb(255, 254, 254);
+    margin-bottom: 0.3rem;
+    text-shadow: var(--shadow);
+    font-size: 25px;
+   
+}
+.subhead7{
+    color: var(--gray);
+    text-shadow: var(--shadow);
+    font-size: 35px;
+}  
+
+.box,.footer{
+    background-color: rgba(220, 220, 220, 0.562);
+}
+.boximg{
+    width: 239.642px;
+    height: 500px;
+}
+.inbox{
+    box-shadow: 0 0 5px var(--gray);
+}
+
+/* section 10 */
+.sec10{
+    margin-bottom: 2rem;
+}
+
+
+.ftlogo{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--yellow);
+}
